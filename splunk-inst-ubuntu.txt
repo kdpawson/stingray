@@ -1,0 +1,31 @@
+::: Splunk Install and Configure on Ubuntu :::
+_____________________________________________
+
+1. Download deb install file
+
+2. sudo dpkg -i splunk-5.0.3-163460-linux-2.6-amd64.deb 
+Selecting previously unselected package splunk.
+(Reading database ... 55002 files and directories currently installed.)
+Unpacking splunk (from splunk-5.0.3-163460-linux-2.6-amd64.deb) ...
+Setting up splunk (5.0.3-163460) ...
+-------------------------------------------------------------------------
+Splunk has been installed in:
+        /opt/splunk
+
+To start Splunk, run the command:
+        /opt/splunk/bin/splunk start
+
+To use the Splunk Web interface, point your browser to:
+    http://server:8000
+
+Complete documentation is at http://docs.splunk.com/Documentation/Splunk
+
+3. Make Splunk autostart at bootup time:
+sudo /opt/splunk/bin/splunk enable boot-start
+
+4. Ensure the firewall ports for Splunk are opened:
+Port 8000 and 8089
+sudo ufw allow 8000/tcp
+sudo ufw allow 8089/tcp
+
+5. Configure Splunk from web interface, change license model and configure syslog settings etc.
