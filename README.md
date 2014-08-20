@@ -1,4 +1,4 @@
 stingray
 ========
 
-Test works
+Test scripts for this test Git repo code name "Stingray"
