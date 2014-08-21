@@ -1,4 +1,7 @@
 ::: Splunk Install and Configure on Ubuntu :::
+
+** Note this is based on a V5 install, V6 is now released, however the install 
+steps are the same. **
 _____________________________________________
 
 1. Download deb install file
