@@ -1,0 +1,3 @@
+Ubuntu Sources for IINET
+Vim search and replace for the /etc/apt/sources.list
+:%s#http://au.archive.ubuntu.com/ubuntu/#http://ftp.iinet.net.au/pub/ubuntu/#g
