@@ -1,6 +1,7 @@
 #/bin/sh
 # OpenVZ login splash screen for Ubuntu Servers
 # Version 1.0 August 2014
+# Test local repo
 sleep 1
 cat /etc/motd
 echo ""
